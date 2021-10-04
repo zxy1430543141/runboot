@@ -1,0 +1,24 @@
+Basic
+[PaymentFeignService#getPaymentById] ---> GET http://CLOUD-PAYMENT-SERVICE/payment/get/1 HTTP/1.1[PaymentFeignService#getPaymentById] <--- HTTP/1.1 200 (9ms)
+
+HEADERS
+[PaymentFeignService#getPaymentById] ---> GET http://CLOUD-PAYMENT-SERVICE/payment/get/1 HTTP/1.1[PaymentFeignService#getPaymentById] ---> END HTTP (0-byte body)
+[PaymentFeignService#getPaymentById] <--- HTTP/1.1 200 (7ms)
+[PaymentFeignService#getPaymentById] connection: keep-alive
+[PaymentFeignService#getPaymentById] content-type: application/json
+[PaymentFeignService#getPaymentById] date: Tue, 28 Sep 2021 08:01:24 GMT
+[PaymentFeignService#getPaymentById] keep-alive: timeout=60
+[PaymentFeignService#getPaymentById] transfer-encoding: chunked
+[PaymentFeignService#getPaymentById] <--- END HTTP (93-byte body)
+
+FULL
+[PaymentFeignService#getPaymentById] <--- HTTP/1.1 200 (193ms)
+[PaymentFeignService#getPaymentById] connection: keep-alive
+[PaymentFeignService#getPaymentById] content-type: application/json
+[PaymentFeignService#getPaymentById] date: Tue, 28 Sep 2021 07:58:23 GMT
+[PaymentFeignService#getPaymentById] keep-alive: timeout=60
+[PaymentFeignService#getPaymentById] transfer-encoding: chunked
+[PaymentFeignService#getPaymentById] 
+[PaymentFeignService#getPaymentById] {"code":200,"message":"查询成功，端口：8001","data":{"id":1,"serial":"尚硅谷001"}}
+[PaymentFeignService#getPaymentById] <--- END HTTP (93-byte body)
+2021-09-28 15:58:24.847  INFO 16248 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: CLOUD-PAYMENT-SERVICE.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
